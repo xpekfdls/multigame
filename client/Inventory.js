@@ -44,8 +44,8 @@ Inventory = function(socket){
 		var str = "";
 		for(var i = 0 ; i < self.items.length; i++){
 			"use strict"
-			let item = Item.List[self.items[i].id];
-			let onclick = "Item.List['" + item.id + "'].event()";
+			var item = Item.List[self.items[i].id];
+			var onclick = "Item.List['" + item.id + "'].event()";
 			str += "<button onclick=\"" + onclick + "\">" + item.name + " x" + self.items[i].amount + "</button><br>";
 		}
 
